@@ -1,0 +1,13 @@
+##Pseudo Code:
+
+1. Create an array that allows user to enter 10 numbers/items
+2. Create another array to store the data with 10 elements
+3. Need an another array to print the output :Starting from index 1
+if (no.of elements<10) do not display the numbers for items that aren’t populated.
+4. Assign and Declare Variables:int[] arr1[10],int[] arr2[10],int[] output[10]
+5. Allow the user to enter the data continously loop until list is full
+if(no.of elements<10)=>Allow filling untilfull
+6. Program exited =>When Sentineal value is entered (Show user what sentineal value to be used to exit program)
+Ex: Use Done to notify user 
+
+7.Basic menu to allow user to (1)add an item to data set,(2)allow useer to display/Read item and (3)exit
