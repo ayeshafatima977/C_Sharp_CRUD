@@ -15,4 +15,4 @@ Continue to allow the user to enter data until the array is full, and keep the p
 https://trello.com/b/2MDgya5R/crud-assignment
 
 ## Citation Summary:
-
+Input Logic :Obtained from Source: https://github.com/TECHCareers-by-Manpower/c-odd-even-sorter-practice-ayeshafatima977/blob/a9cd73fe1944df4bce1d630ef23ec9717ae4d306/Program.cs 

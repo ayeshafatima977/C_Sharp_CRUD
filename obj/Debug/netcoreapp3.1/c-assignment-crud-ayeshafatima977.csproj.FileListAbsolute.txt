@@ -1,0 +1,13 @@
+C:\Users\Ayesha Fatima\Techcareer\test\c-assignment-crud-ayeshafatima977\bin\Debug\netcoreapp3.1\c-assignment-crud-ayeshafatima977.exe
+C:\Users\Ayesha Fatima\Techcareer\test\c-assignment-crud-ayeshafatima977\bin\Debug\netcoreapp3.1\c-assignment-crud-ayeshafatima977.deps.json
+C:\Users\Ayesha Fatima\Techcareer\test\c-assignment-crud-ayeshafatima977\bin\Debug\netcoreapp3.1\c-assignment-crud-ayeshafatima977.runtimeconfig.json
+C:\Users\Ayesha Fatima\Techcareer\test\c-assignment-crud-ayeshafatima977\bin\Debug\netcoreapp3.1\c-assignment-crud-ayeshafatima977.runtimeconfig.dev.json
+C:\Users\Ayesha Fatima\Techcareer\test\c-assignment-crud-ayeshafatima977\bin\Debug\netcoreapp3.1\c-assignment-crud-ayeshafatima977.dll
+C:\Users\Ayesha Fatima\Techcareer\test\c-assignment-crud-ayeshafatima977\bin\Debug\netcoreapp3.1\c-assignment-crud-ayeshafatima977.pdb
+C:\Users\Ayesha Fatima\Techcareer\test\c-assignment-crud-ayeshafatima977\obj\Debug\netcoreapp3.1\c-assignment-crud-ayeshafatima977.csprojAssemblyReference.cache
+C:\Users\Ayesha Fatima\Techcareer\test\c-assignment-crud-ayeshafatima977\obj\Debug\netcoreapp3.1\c-assignment-crud-ayeshafatima977.AssemblyInfoInputs.cache
+C:\Users\Ayesha Fatima\Techcareer\test\c-assignment-crud-ayeshafatima977\obj\Debug\netcoreapp3.1\c-assignment-crud-ayeshafatima977.AssemblyInfo.cs
+C:\Users\Ayesha Fatima\Techcareer\test\c-assignment-crud-ayeshafatima977\obj\Debug\netcoreapp3.1\c-assignment-crud-ayeshafatima977.csproj.CoreCompileInputs.cache
+C:\Users\Ayesha Fatima\Techcareer\test\c-assignment-crud-ayeshafatima977\obj\Debug\netcoreapp3.1\c-assignment-crud-ayeshafatima977.dll
+C:\Users\Ayesha Fatima\Techcareer\test\c-assignment-crud-ayeshafatima977\obj\Debug\netcoreapp3.1\c-assignment-crud-ayeshafatima977.pdb
+C:\Users\Ayesha Fatima\Techcareer\test\c-assignment-crud-ayeshafatima977\obj\Debug\netcoreapp3.1\c-assignment-crud-ayeshafatima977.genruntimeconfig.cache
