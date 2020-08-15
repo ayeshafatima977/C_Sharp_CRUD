@@ -15,59 +15,115 @@ namespace c_assignment_crud_ayeshafatima977
             //------------
             //Prompting the user application purpose and how it can be operated.
             //------------
-            
+
             Console.WriteLine("Welcome!This application will prompt you to create a data set which can be read,updated and modified");
 
             //------------
             //Declaring variables
             //------------
-            int[] inputArray=new int[10],storeArray=new int[10],outputArray=new int[10];//Physical size of array
-            int inputArrayLogical=0;//storeArrayLogical=0,outputArrayLogical=0;//Number of things in the array we care about
+
+            int[] inputArray = new int[10], storeArray = new int[10], outputArray = new int[10];
+
+            PopulateArray(inputArray);  //Calling input Array for userInput for dataset
+        }
+
+            //-----------
+            //Adding elements to Array
+            //------------
+        static void PopulateArray(int[] storeArray)
+        {
             string userInput;
-           // -----------
-            // Input Logic:Requesting user to enter integers upto 10 values or type quit(case sensitive) to output;
-            //Obtained from Even odd Sorter Solution repository by James(Refer Citaion simmary in README for link)
-            // -----------
-           
+            int inputArrayLogical = 1;
+            int[] inputArray = new int[10];
             do
             {
                 int userInputInt;
-
                 Console.Write("Please enter a integer, or \"quit\" to output: ");
-                userInput = Console.ReadLine(); 
-                
+                userInput = Console.ReadLine();
+
                 try
                 {
                     // If this parse fails, none of the rest of the try block will execute, meaning we won't add garbage data
                     // to our array, and the logical size will not go up.
-                    userInputInt = int.Parse(userInput);//Converting string to integer
+                    userInputInt = int.Parse(userInput); //Converting string to integer
 
-                    // Order of the next two lines is important because logical size serves as the index of the next available spot.
                     inputArray[inputArrayLogical] = userInputInt;
                     inputArrayLogical++;
                 }
                 catch
                 {
-                    // If the user has entered "done", the try will still fail, but because it's valid for our program,
-                    // we don't want to tell the user they entered something bad.
+                    // To let user know wthey have entered an invalid input
+
                     if (userInput.ToLower().Trim() != "quit")
                     {
                         Console.WriteLine("You entered invalid input, please try again.");
                     }
                 }
 
-            // While the array is not full (number of things we care about is less than max things)
-            // (number of boxes on shelf is less than size of shelf), and the user has not entered
-            // the sentinel value.
-            } while(inputArrayLogical < inputArray.Length && userInput.ToLower().Trim() != "quit");
+                    // Exit the program when the user enters a sentinel value Quit
 
+            } while (inputArrayLogical < inputArray.Length && userInput.ToLower().Trim() != "quit");
+
+            //----------------
+            //Displaying Output to the User:
+            //----------------
+
+            for (int i = 1; i < inputArrayLogical; i++)
+            {
+                Console.Write("The dataset contains value of:");
+                Console.WriteLine(inputArray[i]);
+            }
 
 
         }
 
-        
+
     }
+
 }
+
+
+/*  static char GetValidChar(string prompt,char menuItem)
+{
+  bool valid=false;
+  int myChar=-1;
+
+  do
+  {
+      char menuItem;
+      Console.WriteLine("Please select option prompt  'A','R' or 'E'");
+      menuItem = char.ToUpper(char.Parse(Console.ReadLine()));
+      try
+      {
+
+          myChar = char.ToUpper(char.Parse(Console.ReadLine()));
+          if (menuItem != 'A' && menuItem != 'R' && menuItem != 'E')
+          {
+              throw new Exception("Invalid menu Item selected");
+          }
+          valid = true;
+      }
+      catch (Exception ex)
+      {
+          Console.WriteLine($"Parse Failed:{ex.Message}");
+
+      } while (!valid) ;
+      return myChar;
+
+  }*/
+
+/*for(int i=0;i<inputArrayLogical;i++)
+{
+    if(inputArray[i]<10)
+    {
+        Console.WriteLineLine("Enter maximum 10 elements");
+newArray[newArrayLogical] = inputArray[i];
+newArrayLogical++;   
+    }
+    else
+    {
+        
+    }*/
 
 
 
