@@ -23,32 +23,66 @@ namespace c_assignment_crud_ayeshafatima977
             //------------
 
             int[] inputArray = new int[10], storeArray = new int[10], outputArray = new int[10];
+    
+            int menuOption;
+        
+            //-------------
+            //MenuOption Selection
+            //--------------
+        do
+            {
+                
+                Console.WriteLine("Menu\n------\n1.Add \n2.Read \n3.Exit");
+                Console.Write("Please enter a menu option:");
+                menuOption = int.Parse(Console.ReadLine());
+                switch(menuOption) 
+                {
+
+                    case 1:
+                    Console.WriteLine("Running option {0}",menuOption);
+                    break;
+                    case 2: 
+                    Console.WriteLine("Running option {0}",menuOption);
+                    break;
+                    case 3:
+                    Console.WriteLine("Exiting program");
+                    break;
+                    default :
+                    Console.WriteLine("Invalid option selected.");
+                    break;
+                }
+
+            }while(menuOption==2 && menuOption!= 3);//When menuoption is not equal to start filling the data set to 10 values to display the output automatically
+            
+            //Calling output Array
 
             PopulateArray(inputArray);  //Calling input Array for userInput for dataset
         }
-
-            //-----------
-            //Adding elements to Array
-            //------------
-        static void PopulateArray(int[] storeArray)
+        //-----------
+        //Adding elements to Array
+        //------------
+        static void PopulateArray(int[] Array)
         {
-            string userInput;
-            int inputArrayLogical = 1;
+            string userInput;// Required for sentineval value
+            int storeArray = 0;//The no. of elements that we actually care about in the array
             int[] inputArray = new int[10];
             do
             {
+                
+            
                 int userInputInt;
                 Console.Write("Please enter a integer, or \"quit\" to output: ");
                 userInput = Console.ReadLine();
 
                 try
+
                 {
                     // If this parse fails, none of the rest of the try block will execute, meaning we won't add garbage data
                     // to our array, and the logical size will not go up.
                     userInputInt = int.Parse(userInput); //Converting string to integer
 
-                    inputArray[inputArrayLogical] = userInputInt;
-                    inputArrayLogical++;
+                    inputArray[storeArray] = userInputInt;
+                    storeArray++;
                 }
                 catch
                 {
@@ -60,70 +94,34 @@ namespace c_assignment_crud_ayeshafatima977
                     }
                 }
 
-                    // Exit the program when the user enters a sentinel value Quit
+                // Exit the program when the user enters a sentinel value Quit
 
-            } while (inputArrayLogical < inputArray.Length && userInput.ToLower().Trim() != "quit");
+            } while (storeArray < inputArray.Length && userInput.ToLower().Trim() != "quit");
 
             //----------------
             //Displaying Output to the User:
             //----------------
+             /*      static void Display(int[] Array)
+            {*/
+               // int storeArray = 0;
+              //  int[] inputArray = new int[10];
+                int[] outputArray = new int[10];
 
-            for (int i = 1; i < inputArrayLogical; i++)
-            {
-                Console.Write("The dataset contains value of:");
-                Console.WriteLine(inputArray[i]);
-            }
-
+                for (int i = 0; i < storeArray; i++)
+                {
+                    Console.Write("The dataset contains value of:");
+                    outputArray[i]=inputArray[i];
+                    Console.WriteLine(outputArray[i]); // Console.WriteLine(inputArray[i]);
+                }
+            
+            
+ 
 
         }
-
-
     }
-
 }
 
 
-/*  static char GetValidChar(string prompt,char menuItem)
-{
-  bool valid=false;
-  int myChar=-1;
-
-  do
-  {
-      char menuItem;
-      Console.WriteLine("Please select option prompt  'A','R' or 'E'");
-      menuItem = char.ToUpper(char.Parse(Console.ReadLine()));
-      try
-      {
-
-          myChar = char.ToUpper(char.Parse(Console.ReadLine()));
-          if (menuItem != 'A' && menuItem != 'R' && menuItem != 'E')
-          {
-              throw new Exception("Invalid menu Item selected");
-          }
-          valid = true;
-      }
-      catch (Exception ex)
-      {
-          Console.WriteLine($"Parse Failed:{ex.Message}");
-
-      } while (!valid) ;
-      return myChar;
-
-  }*/
-
-/*for(int i=0;i<inputArrayLogical;i++)
-{
-    if(inputArray[i]<10)
-    {
-        Console.WriteLineLine("Enter maximum 10 elements");
-newArray[newArrayLogical] = inputArray[i];
-newArrayLogical++;   
-    }
-    else
-    {
-        
-    }*/
 
 
 
