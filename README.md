@@ -18,8 +18,8 @@ https://trello.com/b/2MDgya5R/crud-assignment
 Input Logic :Obtained from Source: https://github.com/TECHCareers-by-Manpower/c-odd-even-sorter-practice-ayeshafatima977/blob/a9cd73fe1944df4bce1d630ef23ec9717ae4d306/Program.cs 
 Reason for Including :I understood how the code works and was implemeted by Instructor:James in class which ran without throwing errors,it would be better to use a proven version than to write my own.
 
-Switch Case Logic :https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/switch
 Other references to: https://stackoverflow.com/questions/19461434/how-can-i-update-and-modify-my-arrays-with-userinput
 https://github.com/TECHCareers-by-Manpower/C-Intro-Cohort-4.2/blob/3fbd0e76699382faf2307a7ff4bfe68298b21996/Program.cs
 https://www.tutorialsteacher.com/csharp/array-csharp
+https://github.com/TECHCareers-by-Manpower/C-Intro-Cohort-4.2/blob/f856dce325493fdc44b39de2dfd106b32c1451fa/Program.cs
 

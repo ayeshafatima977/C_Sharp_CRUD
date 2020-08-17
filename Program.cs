@@ -18,7 +18,7 @@ namespace c_assignment_crud_ayeshafatima977
             //Prompting the user application purpose and how it can be operated.
             //------------
 
-            Console.WriteLine("Welcome!This application will prompt you to create a data set which can be read,modified in later stages");
+            Console.WriteLine("Welcome!This application will prompt you to create a data set which can be read and ,modified");
 
             //------------
             //Declaring variables
@@ -37,7 +37,7 @@ namespace c_assignment_crud_ayeshafatima977
 
             {
 
-                Console.WriteLine("Menu\n------\n1.ADD \n2.READ.\n0.EXIT: Press Enter key");
+                Console.WriteLine("Menu\n------\n1.ADD \n2.READ.\n3.REMOVE.\n0.EXIT: Press Enter key");
                 Console.Write("Please enter a menu option:");
                 menuOption = int.Parse(Console.ReadLine());
 
@@ -55,6 +55,13 @@ namespace c_assignment_crud_ayeshafatima977
                         Output(luckyNumbers);
 
                         break;
+                    case 3:
+                        Console.WriteLine("REMOVE Option will remove the number at index0 and index 7 from the entered luckyNumbers ");
+                       
+                        RemoveAt(luckyNumbers);
+
+                        break;
+
                     default:
                         Console.WriteLine("Invalid Input selected; Press Enterkey to exit");
 
@@ -104,7 +111,7 @@ namespace c_assignment_crud_ayeshafatima977
         {
             for (int i = 0; i < myList.Count; i++)
             {
-                Console.WriteLine($"Item#.{i + 1}:" + myList[i]);
+                Console.WriteLine($"Luckynumber#{i + 1}:" + myList[i]);
             }
 
         }
@@ -119,6 +126,18 @@ namespace c_assignment_crud_ayeshafatima977
             {
                 Console.WriteLine("\n Press enter key to end the program");
             }
+        }
+        
+        //-------------
+        // Removes Index value at 0 and 7 of the menu
+        //------------
+
+
+        static void RemoveAt(List<int> luckyNumbers)//When you call RemoveAt to remove an item, the remaining items in the list are renumbered to replace the removed item.
+        {
+            luckyNumbers.RemoveAt(0);
+            luckyNumbers.RemoveAt(7);
+            Console.WriteLine($"Total Number of Items in List are: {luckyNumbers.Count} ");//Reads lucky Numbers left in the list
         }
     }
 
