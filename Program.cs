@@ -57,7 +57,7 @@ namespace c_assignment_crud_ayeshafatima977
                         break;
                     case 3:
                         Console.WriteLine("REMOVE Option will remove the number at index0 and index 7 from the entered luckyNumbers ");
-                       
+
                         RemoveAt(luckyNumbers);
 
                         break;
@@ -78,6 +78,7 @@ namespace c_assignment_crud_ayeshafatima977
         // Add entries to the list
         //------------
 
+        /*Borrowed Code Starts from Class Module-Refer READ ME for Source Link or at the end of Borrowed code*/
         static void PopulateList(List<int> inputStore)
         {
             string userInput;// Required for sentineval value
@@ -101,6 +102,8 @@ namespace c_assignment_crud_ayeshafatima977
                 }
             } while (userInput.ToLower().Trim() != "done");
         }
+
+        /*Borrowed Code Ends--Source: from Class Module-:https://github.com/TECHCareers-by-Manpower/OddEvenSorter/blob/master/Program.cs */
 
 
         //-------------
@@ -127,12 +130,10 @@ namespace c_assignment_crud_ayeshafatima977
                 Console.WriteLine("\n Press enter key to end the program");
             }
         }
-        
+
         //-------------
         // Removes Index value at 0 and 7 of the menu
         //------------
-
-
         static void RemoveAt(List<int> luckyNumbers)//When you call RemoveAt to remove an item, the remaining items in the list are renumbered to replace the removed item.
         {
             luckyNumbers.RemoveAt(0);
