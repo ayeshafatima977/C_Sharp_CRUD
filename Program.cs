@@ -1,5 +1,5 @@
 ﻿
-/*Title:Creat1e,Read,Update and Delete the data set
+/*Title:Create,Read,Update and Delete the data set
 Purpose of the Project: An application that will maintain a dataset of items and allow the user to manipulate that dataset.
 Author:Ayesha Fatima
 Last Modified:15th August,2020
@@ -78,7 +78,7 @@ namespace c_assignment_crud_ayeshafatima977
         // Add entries to the list
         //------------
 
-        /*Borrowed Code Starts from Class Module-Refer READ ME for Source Link or at the end of Borrowed code*/
+        //@Link: https://github.com/TECHCareers-by-Manpower/OddEvenSorter/blob/master/Program.cs
         static void PopulateList(List<int> inputStore)
         {
             string userInput;// Required for sentineval value
@@ -102,9 +102,6 @@ namespace c_assignment_crud_ayeshafatima977
                 }
             } while (userInput.ToLower().Trim() != "done");
         }
-
-        /*Borrowed Code Ends--Source: from Class Module-:https://github.com/TECHCareers-by-Manpower/OddEvenSorter/blob/master/Program.cs */
-
 
         //-------------
         // Displays entries of the list
